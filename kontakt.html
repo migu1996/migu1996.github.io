@@ -6,7 +6,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport">
 <title>Michael Weppernig</title>
 <style>
-    body{
+    .body{
         background-image: url(images/index.jpg);
         background-size: cover;
         width: 100%;
@@ -14,8 +14,15 @@
         top: 0;
 
     }
+    @media screen and (max-width:768px){
+  .body{
+    background-position-x: -400px;
+    overflow-x: hidden;
+  }
+}
 </style>
 </head>
+<div class="body">
 <body>
     <nav>
         <div class="logo">
@@ -111,4 +118,5 @@
     <script src="https://kit.fontawesome.com/8dbffe4a0a.js" crossorigin="anonymous"></script>
 
 </body>
+</div>
     </html>
