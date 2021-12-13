@@ -283,11 +283,15 @@ fieldset{
 
 @media screen and (max-width:768px){
 
-    body{
+    .body{
         overflow-y: visible;
         overflow-x: hidden;
         background-color: black;
 
+    }
+    nav{
+        position: sticky;
+        top: 0;
     }
     .nav-links{
         position: absolute;
