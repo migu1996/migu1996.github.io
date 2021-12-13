@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    font-family: monospace;
+}
+
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+}
+
+.logo{
+    margin-top: 25px;
+
+}
+
+.logo a{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+    text-decoration: none;
+
+
+}
+.logo a:hover{
+    color: white;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 31px;
+
+}
+
+.nav-links li{
+    list-style-type: none;
+
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    
+
+}
+nav a:hover{
+    color: green;
+
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+.content{
+    margin-top: 650px;
+    padding-bottom: 30px;
+    background-color: #50403e;
+    text-align: center;
+    opacity: 0.9;
+
+}
+.title{
+    margin-top: 558px;
+    padding: 30px;
+    background-color: #50403e;
+    text-align: center;
+}
+.title h1{
+    color: white;
+}
+.content h1{
+    padding: 30px 0 30px 0;
+    color: white;
+}
+
+#instagram{
+    display: inline-block;
+    padding: 5px 10px 0 10px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+}
+#instagram:hover, #facebook:hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+#facebook{
+    display: inline-block;
+    padding: 5px 10px 0 10px;
+    background-color: #4267B2;
+    border-radius: 10px;
+    font-size: 40px;
+}
+#facebook a, #instagram a{
+    color: white;
+}
+
+footer{
+    max-width: 100%;
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 20px;
+}
+
+
+.calendar table{
+    border-spacing: 5px 1rem;
+    margin: 50px auto 0 auto;
+    color: white;
+    text-align: left;
+
+}
+
+
+
+.calendar table th{
+    text-align: center;
+}
+.border{
+    border-top: 2px solid black;
+}
+.hr{
+    width: 60%;
+    margin: auto;
+}
+.contact{
+    display: flex;
+    background-color: rgb(229, 223, 241);
+    margin-top: 630px;
+
+}
+.container{
+    margin-left: 80px;
+    margin-right: 80px;
+ 
+}
+.col{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left:15px;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width:100%
+}
+
+.row {
+    display: block
+  
+}
+.infos{
+    text-align: center;
+}
+
+.infoIcon{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin: 0 auto 20px auto;
+  transition: all 1s ease;
+  background-color: #1435ee;
+}
+
+.fa-home, .fa-envelope, .fa-phone{
+    margin-top: 25px;
+    color: white;
+}
+
+.infoIcon:hover{
+    color: #ff6f61;
+    background-color: black;
+}
+
+.infoItem{
+    
+    padding-bottom: 20px;
+}
+
+#contactInformation{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+input{
+    margin-bottom: 10px;
+    height: 25px;
+    width: 20%;
+    margin-top: 30px;
+}
+
+#myName{
+    max-width: 19.5%;
+    margin-left: 30%;
+    background-color: rgb(229, 223, 241);
+}
+#myEmail{
+    background-color: rgb(229, 223, 241);
+    max-width: 19.5%;
+
+}
+textarea{
+    margin-left: 30%;
+    width: 40.8%;
+    max-width: 40.8%;
+    min-width: 40.8%;
+    height: 200px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    background-color: rgb(229, 223, 241);
+}
+
+#mySubmit{
+    margin-left: 30%;
+    width: 41.5%;
+    height: 30px;
+    background-color: #1435ee;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+fieldset{
+    width: 100%;
+    color: white;
+    border: none;
+}
+
+.contactForm{
+    background-color: #50403e;
+    padding-bottom: 30px; 
+    width: 100%;
+}
+
+.contactForm h1{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+#button{
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+   
+    .nav-links{
+        width: 65%;
+
+    }
+    .hr{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:768px){
+
+    body{
+        overflow-y: visible;
+        overflow-x: hidden;
+        background-color: black;
+
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 95vh;
+        top: 5vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        color: white;
+
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        margin-top: 20px;
+    }
+    .nav-active{
+        transform: translateX(0%);
+
+    }
+    .nav{
+        background-color: black;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .hr{
+        width: 100%;
+    }
+    .row{
+        display: block;
+    }
+    .contact{
+        display: block;
+    }
+    .title{
+        margin-top: 540px;
+    }
+    
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+.toggle .line2{
+    opacity: 0;
+    
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+    
+}
