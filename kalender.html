@@ -6,7 +6,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport">
 <title>Michael Weppernig</title>
 <style>
-  body{
+  .body{
     background-image: url(images/calendar.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -14,12 +14,14 @@
     background-color: black;
 }
 @media screen and (max-width:768px){
-  body{
+  .body{
     background-position-x: -150px;
+    overflow-x: hidden;
   }
 }
 </style>
 </head>
+<div class="body">
 <body>
 
     <nav>
@@ -131,4 +133,5 @@
       }, 5000);
     });</script>
 </body>
+</div>
     </html>
