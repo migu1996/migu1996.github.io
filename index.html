@@ -6,26 +6,31 @@
 <meta content="width=device-width, initial-scale=1, minimal-scale=1" name="viewport">
 <title>Michael Weppernig</title>
 <style>
-.body{
-    display: block;
-    background-image: url(images/index.JPG);
+body{
+    background-image: url(images/index.jpg);
     background-attachment: fixed;
-    top: 0;
-    left: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
+    background-position: center;
 }
 @media screen and (max-width:768px){
-    .body{
-        background-position-x: -350px;
-        overflow-x: hidden;
-    }
+ 
+  html{
+      overflow-x: hidden;
+
+  }
+  nav{
+      position: fixed;
+      top: 0;
+      width: 100%;
+  }
 }
+
 
 </style>
 </head>
-<div class="body">
+
 <body>
     <nav>
         <div class="logo">
@@ -55,16 +60,11 @@
        
     </main>
     <footer>
-        <section id="instagram">
-            <a href="https://www.instagram.com/michi_weppernig" target="blank"><i class="fab fa-instagram"></i></a>
-        </section>
-        <section id="facebook">
-            <a href="https://www.facebook.com/michael.weppernig" target="blank"><i class="fab fa-facebook-square"></i></a>
-        </section>
+
     </footer>
 
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/8dbffe4a0a.js" crossorigin="anonymous"></script>
 </body>
-</div>
+
     </html>

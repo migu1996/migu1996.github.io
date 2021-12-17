@@ -8,14 +8,18 @@ nav{
     background-color: black;
     display: flex;
     justify-content: space-around;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
-    height: 10vh;
+    height: 100px;
+
+    z-index: 10;
+
 
 }
 
 .logo{
-    margin-top: 25px;
+    margin-top: 40px;
 
 }
 
@@ -35,8 +39,8 @@ nav{
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 50%;
-    margin-top: 31px;
+    width: 60%;
+    padding-top: 45px;
 
 }
 
@@ -72,15 +76,18 @@ nav a:hover{
     margin: 3px;
     transition: all 0.3s ease;
 }
-.content{
-    margin-top: 650px;
-    padding-bottom: 30px;
+.content, .contact{
+    position: absolute;
+    top: 85%;
+    width: 100%;
     background-color: #50403e;
     text-align: center;
 
 }
 .title{
-    margin-top: 558px;
+    position: absolute;
+    top: 75%;
+    right: 0;
     padding: 30px;
     background-color: #50403e;
     text-align: center;
@@ -117,11 +124,13 @@ nav a:hover{
 }
 
 footer{
-    max-width: 100%;
-    background-color: black;
-    color: white;
-    text-align: right;
     padding: 20px;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: -10;
+
 }
 
 
@@ -148,7 +157,6 @@ footer{
 .contact{
     display: flex;
     background-color: rgb(229, 223, 241);
-    margin-top: 630px;
 
 }
 .container{
@@ -212,20 +220,20 @@ input{
 }
 
 #myName{
-    max-width: 19.5%;
-    margin-left: 30%;
+    width: 24%;
     background-color: rgb(229, 223, 241);
+    margin-left: 8px;
 }
 #myEmail{
     background-color: rgb(229, 223, 241);
-    max-width: 19.5%;
+    width: 24%;
 
 }
 textarea{
-    margin-left: 30%;
-    width: 40.8%;
-    max-width: 40.8%;
-    min-width: 40.8%;
+
+
+    max-width: 50%;
+    min-width: 50%;
     height: 200px;
     min-height: 200px;
     margin-bottom: 10px;
@@ -233,8 +241,8 @@ textarea{
 }
 
 #mySubmit{
-    margin-left: 30%;
-    width: 41.5%;
+
+    width: 51.5%;
     height: 30px;
     background-color: #1435ee;
     border: none;
@@ -243,16 +251,19 @@ textarea{
 }
 
 fieldset{
-    width: 100%;
+
     color: white;
     border: none;
+    margin: auto;
 }
 
 .contactForm{
     background-color: #50403e;
     padding-bottom: 30px; 
     width: 100%;
+    
 }
+
 
 .contactForm h1{
     text-align: center;
@@ -261,6 +272,9 @@ fieldset{
 }
 #button{
     cursor: pointer;
+}
+.body{
+    min-height: fit-content;
 }
 
 
@@ -277,6 +291,8 @@ fieldset{
     .hr{
         width: 100%;
     }
+    
+    
 }
 
 
@@ -292,12 +308,13 @@ fieldset{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 95vh;
-        top: 5vh;
+        height: 92vh;
+        top: 12vh;
         background-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
         width: 100%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
@@ -307,14 +324,20 @@ fieldset{
     }
     .nav-links li {
         opacity: 0;
+        margin-top: -80px;
     }
     .burger{
         display: block;
-        margin-top: 20px;
+        margin-top: 19px;
+        margin-right: 10px;
     }
     .nav-active{
         transform: translateX(0%);
 
+    }
+    .logo{
+       margin-left: 10px;
+       margin-top: 23px;
     }
    
     h1{
@@ -325,13 +348,12 @@ fieldset{
     }
     .row{
         display: block;
+        margin-left: -50px;
     }
     .contact{
         display: block;
     }
-    .title{
-        margin-top: 540px;
-    }
+
     
 }
 

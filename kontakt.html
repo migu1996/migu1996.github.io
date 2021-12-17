@@ -6,17 +6,16 @@
 <meta content="width=device-width, initial-scale=1" name="viewport">
 <title>Michael Weppernig</title>
 <style>
-   .body{
+   body{
     background-image: url(images/contact.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
+    background-position: center;
 }
 @media screen and (max-width:768px){
-  .body{
-    background-position-x: -700px;
-  }
+ 
   html{
       overflow-x: hidden;
 
@@ -29,7 +28,7 @@
 }
 </style>
 </head>
-<div class="body">
+
 <body>
     <nav>
         <div class="logo">
@@ -59,6 +58,7 @@
                 <fieldset>
                     <input type="text" id="myName" name="myName"  placeholder="Your Name" required>
                     <input type="text" id="myEmail" name="myEmail" placeholder="Your Email" required>
+                    <br>
                     <textarea name="myInformation" id="myInformation"  placeholder="Your Message"></textarea><br>
                     <button id="mySubmit">Send</button>
                    
@@ -113,17 +113,12 @@
        
     </main>
     <footer>
-        <section id="instagram">
-            <a href="https://www.instagram.com/michi_weppernig" target="blank"><i class="fab fa-instagram"></i></a>
-        </section>
-        <section id="facebook">
-            <a href="https://www.facebook.com/michael.weppernig" target="blank"><i class="fab fa-facebook-square"></i></a>
-        </section>
+       
+    
     </footer>
 
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/8dbffe4a0a.js" crossorigin="anonymous"></script>
 
 </body>
-</div>
     </html>

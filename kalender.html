@@ -6,22 +6,27 @@
 <meta content="width=device-width, initial-scale=1" name="viewport">
 <title>Michael Weppernig</title>
 <style>
-  .body{
-    background-image: url(images/calendar.jpg);
+  body{
+    background-image: url(images/calendar.jpeg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
+    background-position: center;
+    background-position-y: -20px;
 }
 @media screen and (max-width:768px){
-  .body{
-    background-position-x: -700px;
+  body{
     overflow-x: hidden;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 }
 </style>
 </head>
-<div class="body">
 <body>
 
     <nav>
@@ -114,12 +119,7 @@
        
     </main>
     <footer>
-        <section id="instagram">
-            <a href="https://www.instagram.com/michi_weppernig" target="blank"><i class="fab fa-instagram"></i></a>
-        </section>
-        <section id="facebook">
-            <a href="https://www.facebook.com/michael.weppernig" target="blank"><i class="fab fa-facebook-square"></i></a>
-        </section>
+       
     </footer>
 
     <script src="app.js"></script>
@@ -133,5 +133,4 @@
       }, 5000);
     });</script>
 </body>
-</div>
     </html>
