@@ -78,10 +78,11 @@ nav a:hover{
 }
 .content, .contact{
     position: absolute;
-    top: 85%;
+    top: 75%;
     width: 100%;
     background-color: #50403e;
     text-align: center;
+    
 
 }
 .title{
@@ -124,17 +125,12 @@ nav a:hover{
 }
 
 footer{
-    padding: 20px;
-    background-color: black;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    z-index: -10;
-
+    float: left;
+    background-color: green;
 }
 
 
-.calendar table{
+.calendar table, .calendartwo table{
     border-spacing: 5px 1rem;
     margin: 50px auto 0 auto;
     color: white;
@@ -273,13 +269,53 @@ fieldset{
 #button{
     cursor: pointer;
 }
-.body{
-    min-height: fit-content;
+
+
+.social{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    text-align: right;
+  }
+.about{
+    position: absolute;
+    top: 75%;
+    background-color: white;
+    width: 100%;
+
 }
 
+.flex{
+    display: flex;
+    padding: 20px;
+}
+.equipment{
+    background-color: #fd5949;
+    padding: 20px;
+}
+.flex img{
 
+    animation: fading 5s infinite;
+    position: relative;
+    width: 40%;
+    margin-left: auto;
+    margin-right: 0;
+    height: auto;
+    border-radius: 10px;
+}
+.equipment table{
+    width: 30%;
+    margin: auto
 
-
+}
+@keyframes fading{
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100%{opacity: 0;}
+}
 
 
 @media screen and (max-width:1024px){
@@ -328,7 +364,7 @@ fieldset{
     }
     .burger{
         display: block;
-        margin-top: 19px;
+        margin-top: 13px;
         margin-right: 10px;
     }
     .nav-active{
@@ -337,7 +373,7 @@ fieldset{
     }
     .logo{
        margin-left: 10px;
-       margin-top: 23px;
+       margin-top: 12px;
     }
    
     h1{
@@ -353,6 +389,31 @@ fieldset{
     .contact{
         display: block;
     }
+    .flex{
+        display: block;
+    }
+    .flex img{
+        width: 80%;
+        height: auto;
+        margin: 30px auto 30px auto;
+        
+    }
+
+    .about table{
+        margin: 30px auto 30px auto;
+    }
+    .about h2{
+        text-align: center;
+    }
+    .equipment table{
+        width: 70%;
+       
+    }.equipment dl{
+        width: 30%;
+        margin: 100px auto 0 auto;
+    
+    
+  
 
     
 }

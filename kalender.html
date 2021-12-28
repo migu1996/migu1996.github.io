@@ -15,6 +15,21 @@
     background-position: center;
     background-position-y: -20px;
 }
+.pic{
+  background-image: url(images/slideshow2.jpg);
+  padding: 100px;
+  background-position-y: 100px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.calendartwo{
+  padding: 20px;
+  background-color: black;
+}
+
+
+
 @media screen and (max-width:768px){
   body{
     overflow-x: hidden;
@@ -114,13 +129,72 @@
                     <td>UK Big Blue - Lexington, Ky.</td>
                   </tr>
                 </table>
-                
+    
+
+              <table>
+                <tr>
+                  <th>March</th>
+                  <th>April</th>
+                  <th>Mai</th>
+                </tr>
+                <tr>
+                  <td><br></td>
+                </tr>
+                <tr>
+                  <td>14-15</td>
+                  <td>4-5</td>
+                  <td>5-7</td>
+                </tr>
+                <tr>
+                  <td>Bell Collegiate (Hillsdale)</td>
+                  <td>Music City Invite</td>
+                  <td>NCAA D2 Super Regional</td>
+                </tr>
+                <tr>
+                  <td>Mid Pines GC - Southern Pines, N.C.</td>
+                  <td>Hermitage GC - Old Hickory, Tenn.</td>
+                  <td>Purgatory GC - Noblesville, Ind.</td>
+                </tr>
+                <tr>
+                 <td class="border"></td>
+                 <td class="border"></td>
+                 <td class="border"></td>
+                </tr>
+                <tr>
+                  <td>19-20</td>
+                  <td>18-19</td>
+                  <td>16-20</td>
+                </tr>
+                <tr>
+                  <td>SVSU Spring Invite</td>
+                  <td>GMAC Championship</td>
+                  <td>NCAA National Championships</td>
+                </tr>
+                <tr>
+                  <td>Kearney Hills Golf Links - Georgetown, Ky.</td>
+                  <td>UK Big Blue - Lexington, Ky.</td>
+                  <td>TPC Michigan - Detroit, Mich.</td>
+                </tr>
+                <tr>
+                 <td class="border"></td>
+                 <td class="border"></td>
+                 <td class="border"></td>
+                </tr>
+                <tr>
+                  <td>28-29</td>
+                </tr>
+                <tr>
+                  <td>Findlay Spring Invite</td>
+                </tr>
+                <tr>
+                  <td>UK Big Blue - Lexington, Ky.</td>
+                </tr>
+              </table>
             </div>
-       
+
+        </div>
     </main>
-    <footer>
-       
-    </footer>
+  
 
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/8dbffe4a0a.js" crossorigin="anonymous"></script>
@@ -129,7 +203,7 @@
     <script>
     $("#button").click(function() {
       $('html, body').animate({
-        scrollTop: $(".calendar").offset().top
+        scrollTop: $("#button").offset().top
       }, 5000);
     });</script>
 </body>
