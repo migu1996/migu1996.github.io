@@ -466,6 +466,13 @@ fieldset{
     h1{
         font-size: 30px;
     }
+    .title h1{
+        font-size: 20px;
+
+    }
+    .title{
+        width: 100%;
+    }
     .hr{
         width: 95%;
     }
