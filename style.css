@@ -347,8 +347,8 @@ fieldset{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 92vh;
-        top: 12vh;
+        height: 95vh;
+        top: 7vh;
         background-color: black;
         display: flex;
         flex-direction: column;
@@ -414,9 +414,12 @@ fieldset{
     }.equipment dl{
         width: 40%;
         margin: 100px auto 0 auto;
-    
- 
-}
+    }
+    #instagram, #facebook{
+        padding: 5px 8px 5px 8px;
+        font-size: 25px;
+    }
+
 
 }
 
