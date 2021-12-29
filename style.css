@@ -292,8 +292,7 @@ fieldset{
 .flex{
     display: flex;
     padding: 20px;
-    max-width: 95%;
-    flex-wrap: wrap;
+
 }
 .equipment{
     background-color: #fd5949;
@@ -322,7 +321,7 @@ fieldset{
   
   .scroll-down {
     position: absolute;
-    bottom: 10%;
+    bottom: 50px;
     left: 50%;
     margin-left: -16px;
     display: block;
@@ -387,7 +386,29 @@ fieldset{
     }
     .nav-links{
         width: 65%;
+    }
+    .flex{
+        display: block;
 
+    }
+    .flex img{
+        width: 80%;
+        height: auto;
+        margin: 30px auto 30px auto;  
+    }
+    
+    .about table{
+        margin: 30px auto 30px auto;
+    }
+    .about h2{
+        text-align: center;
+    }
+    .equipment table{
+        width: 70%;
+       
+    }.equipment dl{
+        width: 40%;
+        margin: 100px auto 0 auto;
     }
 
     
@@ -465,7 +486,6 @@ fieldset{
         margin: 30px auto 30px auto;  
     }
     
-
     .about table{
         margin: 30px auto 30px auto;
     }
