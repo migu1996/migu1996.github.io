@@ -292,6 +292,8 @@ fieldset{
 .flex{
     display: flex;
     padding: 20px;
+    max-width: 95%;
+    flex-wrap: wrap;
 }
 .equipment{
     background-color: #fd5949;
@@ -320,7 +322,7 @@ fieldset{
   
   .scroll-down {
     position: absolute;
-    bottom: 50px;
+    bottom: 10%;
     left: 50%;
     margin-left: -16px;
     display: block;
@@ -455,8 +457,7 @@ fieldset{
     }
     .flex{
         display: block;
-        max-width: 95%;
-        flex-wrap: wrap;
+
     }
     .flex img{
         width: 80%;
