@@ -35,7 +35,10 @@ body{
 </head>
 
 <body>
-    <div class="bg"></div>
+    <div class="bg">
+        <h1>Schreibe mir eine Nachricht</h1>
+        <a href="#" class="scroll-down" address="true"></a>
+    </div>
     <nav>
         <div class="logo">
             <h4><a href="index.html">Michael Weppernig</a></h4>
@@ -57,7 +60,8 @@ body{
     </nav>
 
     <main>
-        <div class="contact">
+        
+        <div class="contact" id="button">
             <section class="contactForm">
                 <h1>Send me a message</h1>
             <form action="http://webdevbasics.net/scripts/prime.php">
@@ -116,9 +120,18 @@ body{
             
     </main>
    
-
+   
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/8dbffe4a0a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+    $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('#button').offset().top }, 'slow');
+      return false;
+    });
+  });
+    </script>
 
 </body>
     </html>

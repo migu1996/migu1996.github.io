@@ -265,9 +265,6 @@ fieldset{
     color: white;
     padding-top: 50px;
 }
-#button{
-    cursor: pointer;
-}
 
 
 .social{
@@ -371,6 +368,43 @@ fieldset{
       transform: translateY(-5px);
     }
   }
+  .bg h1{
+      color: white;
+      position: absolute;
+      top: 55%;
+      right: 10%;
+      padding: 15px;
+      border: solid 1px white;
+      
+  }
+  .lastTournament{
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      color: white;
+      border: solid 2px black;
+      box-shadow: black 10px 10px 10px;
+      padding: 10px;
+      text-align: center;
+      font-size: 15px;
+  }
+  .lastTournament table, .nextTournament table{
+    border-spacing: 5px 1rem;
+
+  }
+
+  .nextTournament{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    color: white;
+    border: solid 2px black;
+    box-shadow: black 10px 10px 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
 @keyframes fading{
     0% {opacity: 0;}
     50% {opacity: 1;}
@@ -474,7 +508,7 @@ fieldset{
         width: 100%;
     }
     .hr{
-        width: 95%;
+        width: 60%;
     }
     .row{
         display: block;

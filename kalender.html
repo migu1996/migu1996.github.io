@@ -14,6 +14,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-position-y: -60px;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -40,6 +41,39 @@
 </head>
 <body>
 <div class="bg">
+    <div class="lastTournament">
+      <table>
+        <th>Letztes Turnier</th>
+       
+        <tr>
+        
+          <td>T14 MW Regional @ Fox Run</td>
+        </tr>
+        <tr>
+          <td>Fox Run GC Eureka MO</td>
+        </tr>
+        <tr>
+          <td>76, 77, 74</td>
+        </tr>
+      </table>
+    </div>
+    <div class="nextTournament">
+      <table>
+        <tr>
+        <th>Nächstes Turnier</th>
+      </tr>
+    
+        <tr>
+          <td>Bell Collegiate (Hillsdale)</td>
+        </tr>
+        <tr>
+          <td>Mid Pines GC - Southern Pines, N.C.</td>
+        </tr>
+        <tr>
+          <td>14-15 März</td>
+        </tr>
+      </table>
+    </div>
     <a href="#" class="scroll-down" address="true"></a>
 </div>
     <nav>
@@ -197,13 +231,7 @@
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/8dbffe4a0a.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-   
     <script>
-    $("#button").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#button").offset().top
-      }, 5000);
-    });
 
     $(function() {
     $('.scroll-down').click (function() {
