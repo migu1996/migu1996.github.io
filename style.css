@@ -3,7 +3,6 @@
     font-family: monospace;
 }
 
-
 nav{
     background-color: black;
     display: flex;
@@ -329,9 +328,7 @@ fieldset{
         width: 65%;
 
     }
-    .hr{
-        width: 100%;
-    }
+
     
     
 }
