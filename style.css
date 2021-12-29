@@ -285,6 +285,7 @@ fieldset{
     top: 75%;
     background-color: white;
     width: 100%;
+    flex-wrap: wrap;
 
 }
 
@@ -412,10 +413,11 @@ fieldset{
         width: 30%;
         margin: 100px auto 0 auto;
     
-    
-  
-
-    
+ 
+}
+    .about{
+        max-width: 100%;
+    }
 }
 
 @keyframes navLinkFade{
