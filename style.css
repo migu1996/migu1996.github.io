@@ -96,7 +96,7 @@ nav a:hover{
     color: white;
 }
 .content h1{
-    padding: 2%;
+    padding: 20px;
     color: white;
 }
 
@@ -320,7 +320,7 @@ fieldset{
   
   .scroll-down {
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     left: 50%;
     margin-left: -16px;
     display: block;
@@ -339,7 +339,7 @@ fieldset{
   .scroll-down:before {
       position: absolute;
       top: calc(50% - 8px);
-      left: calc(50% - 6px);
+      left: calc(50% - 7px);
       transform: rotate(-45deg);
       display: block;
       width: 12px;
@@ -441,10 +441,10 @@ fieldset{
     }
    
     h1{
-        font-size: 5%;
+        font-size: 30px;
     }
     .hr{
-        width: 100%;
+        width: 95%;
     }
     .row{
         display: block;
