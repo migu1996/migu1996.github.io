@@ -75,7 +75,7 @@ nav a:hover{
     margin: 3px;
     transition: all 0.3s ease;
 }
-.content, .contact{
+ .contact, .content{
     position: absolute;
     left: 0;
     top: 100%;
@@ -83,8 +83,8 @@ nav a:hover{
     background-color: #50403e;
     text-align: center;
     
-
 }
+
 .title{
     position: absolute;
     top: 60%;
@@ -379,7 +379,7 @@ fieldset{
       right: 5%;
       padding: 15px;
       border: solid 2px white;
-      box-shadow: white 10px 10px 50px;
+      box-shadow: white 10px 10px 10px;
       
   }
   .lastTournament{
@@ -554,11 +554,12 @@ fieldset{
 
     .nextTournament{
         position: absolute;
-        left: 0;
-        top: fit-content;
-        width: 100%;
+        left: 50%;
+        top: 70%;
+        width: 50%;
+        height: 15vh;
         background-color: black;
-        opacity: 0.8;
+        opacity: 1;
         color: white;
         box-shadow: black 0px 0px 0px;
         padding: 10px;
@@ -569,10 +570,11 @@ fieldset{
         position: absolute;
         left: 0;
         top: 70%;
-        width: 100%;
+        width: 50%;
+        height: 15.45vh;
         color: white;
         background-color: black;
-        opacity: 0.8;
+        opacity: 1;
         box-shadow: black 0px 0px 0px;
         padding: 10px;
         text-align: center;
@@ -580,6 +582,7 @@ fieldset{
     }
     .lastTournament table, .nextTournament table{
         width: 100%;
+        
     }
 
     .bg h1{
