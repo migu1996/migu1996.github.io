@@ -565,7 +565,7 @@ fieldset{
     .nextTournament{
         position: absolute;
         left: 50%;
-        top: 70%;
+        top: 60%;
         width: 50%;
         height: 15vh;
         background-color: black;
@@ -579,7 +579,7 @@ fieldset{
     .lastTournament{
         position: absolute;
         left: 0;
-        top: 70%;
+        top: 60%;
         width: 50%;
         height: 15.45vh;
         color: white;
@@ -601,6 +601,9 @@ fieldset{
         font-size: 20px;
         text-align: center;
         width: 92%;
+    }
+    .scroll-down{
+        bottom: 100px;
     }
 
 
