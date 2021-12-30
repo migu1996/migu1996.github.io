@@ -454,6 +454,7 @@ fieldset{
     
     .about table{
         margin: 30px auto 30px auto;
+        flex-wrap: wrap;
     }
     .about h2{
         text-align: center;
