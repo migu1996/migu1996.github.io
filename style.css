@@ -75,12 +75,22 @@ nav a:hover{
     margin: 3px;
     transition: all 0.3s ease;
 }
- .contact, .content{
+ .contact{
     position: absolute;
     left: 0;
     top: 100%;
     width: 100%;
     background-color: #50403e;
+    text-align: center;
+    
+}
+.content{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(50px);
     text-align: center;
     
 }
