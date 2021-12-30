@@ -80,7 +80,6 @@ nav a:hover{
     left: 0;
     top: 100%;
     width: 100%;
-    background-color: #50403e;
     text-align: center;
     
 }
@@ -165,7 +164,7 @@ footer{
 }
 .contact{
     display: flex;
-    background-color: rgb(229, 223, 241);
+    background-color: transparent;
 
 }
 .container{
@@ -219,6 +218,7 @@ footer{
 #contactInformation{
     padding-top: 50px;
     padding-bottom: 30px;
+    background-color: rgb(229, 223, 241);
 }
 
 input{
@@ -267,7 +267,8 @@ fieldset{
 }
 
 .contactForm{
-    background-color: #50403e;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(300px);
     padding-top: 100px;
     width: 100%;
     
@@ -388,6 +389,8 @@ fieldset{
       top: 55%;
       right: 5%;
       padding: 20px;
+      background-color: black;
+      opacity: 0.8;
 
       
   }
@@ -414,8 +417,7 @@ fieldset{
     top: 50%;
     color: white;
     background-color: black;
-      opacity: 0.8;
-    border: solid 2px black;
+    opacity: 0.8;
     box-shadow: black 10px 10px 10px;
     padding: 10px;
     text-align: center;
@@ -460,6 +462,28 @@ fieldset{
     }.equipment dl{
         width: 40%;
         margin: 100px auto 0 auto;
+    }
+    .nextTournament{
+        left: 50%;
+        top: 60%;
+        width: 50%;
+        height: 15vh;
+        opacity: 1;
+        box-shadow: black 0px 0px 0px;
+        font-size: 8px;
+    }
+    .lastTournament{
+        left: 0;
+        top: 60%;
+        width: 50%;
+        height: 15vh;
+        opacity: 1;
+        box-shadow: black 0px 0px 0px;
+        font-size: 8px;
+    }
+    .nextTournament table, .lastTournament table{
+        margin-left: auto;
+        margin-right: auto;
     }
 
     
@@ -562,32 +586,24 @@ fieldset{
     }
 
     .nextTournament{
-        position: absolute;
         left: 50%;
         top: 60%;
         width: 50%;
         height: 15vh;
-        background-color: black;
         opacity: 1;
-        color: white;
         box-shadow: black 0px 0px 0px;
-        padding: 10px;
-        text-align: center;
         font-size: 8px;
+
     }
     .lastTournament{
-        position: absolute;
         left: 0;
         top: 60%;
         width: 50%;
-        height: 15.5vh;
-        color: white;
-        background-color: black;
+        height: 15vh;
         opacity: 1;
         box-shadow: black 0px 0px 0px;
-        padding: 10px;
-        text-align: center;
         font-size: 8px;
+
     }
     .lastTournament table, .nextTournament table{
         width: 100%;
@@ -603,6 +619,13 @@ fieldset{
     }
     .scroll-down{
         bottom: 90px;
+    }
+    .contactForm{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .calendar table{
+        padding: 0px 10px 0px 10px;
     }
 
 
