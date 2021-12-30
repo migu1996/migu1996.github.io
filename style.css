@@ -304,6 +304,7 @@ fieldset{
 .flex{
     display: flex;
     padding: 20px;
+    flex-basis: auto;
 
 }
 .equipment{
@@ -485,6 +486,7 @@ fieldset{
         margin-left: auto;
         margin-right: auto;
     }
+    
 
     
     
