@@ -305,6 +305,7 @@ fieldset{
     display: flex;
     padding: 20px;
     flex-basis: auto;
+    justify-content: space-around;
 
 }
 .equipment{
