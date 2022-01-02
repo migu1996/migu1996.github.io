@@ -410,6 +410,7 @@ fieldset{
       padding: 10px;
       text-align: center;
       font-size: 15px;
+
   }
   .lastTournament table, .nextTournament table{
     border-spacing: 5px 1rem;
@@ -599,7 +600,7 @@ fieldset{
         left: 50%;
         top: 60%;
         width: 50%;
-        height: 15vh;
+        height: fit-content;
         opacity: 1;
         box-shadow: black 0px 0px 0px;
         font-size: 8px;
@@ -609,7 +610,7 @@ fieldset{
         left: 0;
         top: 60%;
         width: 50%;
-        height: 15vh;
+        height: fit-content;
         opacity: 1;
         box-shadow: black 0px 0px 0px;
         font-size: 8px;
@@ -628,7 +629,7 @@ fieldset{
         width: 100%;
     }
     .scroll-down{
-        bottom: 90px;
+        bottom: 10px;
     }
     .contactForm{
         padding-top: 20px;
