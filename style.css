@@ -17,6 +17,8 @@ nav{
 
 }
 
+
+
 .logo{
     margin-top: 40px;
 
@@ -81,6 +83,7 @@ nav a:hover{
     top: 100%;
     width: 100%;
     text-align: center;
+    z-index: 20;
     
 }
 .content{
@@ -91,6 +94,7 @@ nav a:hover{
     background-color: transparent;
     -webkit-backdrop-filter: blur(100px);
     text-align: center;
+    z-index: 20;
     
 }
 
@@ -285,15 +289,16 @@ fieldset{
 .social{
     position: fixed;
     bottom: 0;
-    right: 0;
     width: 100%;
+    right: 0;
     padding: 15px;
-    background-color: black;
+    background-color: transparent;
     text-align: right;
+    
   }
 .about{
     position: absolute;
-    top: 75%;
+    top: 72%;
     left: 0;
     background-color: white;
     width: 100%;
@@ -304,8 +309,6 @@ fieldset{
 .flex{
     display: flex;
     padding: 20px;
-    flex-basis: auto;
-    justify-content: space-around;
 
 }
 .equipment{
@@ -319,8 +322,8 @@ fieldset{
     width: 40%;
     margin-left: auto;
     margin-right: 0;
-    height: auto;
-    border-radius: 10px;
+
+    border-radius: 20px;
 }
 .equipment table{
     width: 30%;
@@ -452,19 +455,15 @@ fieldset{
         margin: 30px auto 30px auto;  
     }
     
-    .about table{
-        margin: 30px auto 30px auto;
-        flex-wrap: wrap;
-    }
+
     .about h2{
         text-align: center;
     }
     .equipment table{
-        width: 70%;
+
+        margin-left: auto;
+        margin-right: auto;
        
-    }.equipment dl{
-        width: 40%;
-        margin: 100px auto 0 auto;
     }
     .nextTournament{
         left: 50%;
@@ -484,10 +483,17 @@ fieldset{
         box-shadow: black 0px 0px 0px;
         font-size: 8px;
     }
-    .nextTournament table, .lastTournament table{
+    .nextTournament table, .lastTournament table {
         margin-left: auto;
         margin-right: auto;
     }
+    .about table{
+
+        margin: 30px auto 30px auto;
+        
+    }
+
+    
     
 
     

@@ -122,13 +122,10 @@ footer{
                     <td>Odyssey Nr. 7</td>
                 </tr>
             </table>
-    <img src="images/slideshow1.jpg" alt="slideshow">
-    <img src="images/slideshow2.jpg" alt="slideshow">
-    <img src="images/slideshow3.jpg" alt="slideshow">
-    <img src="images/slideshow4.jpg" alt="slideshow">
-    <img src="images/slideshow5.jpg" alt="slideshow">
-    <img src="images/slideshow6.jpg" alt="slideshow">
-    <img src="images/slideshow7.jpg" alt="slideshow">
+    
+    </div>
+    <div class="asdf">
+        <img src="images/slideshow1.jpg" alt="">
     </div>
 </div>
 
@@ -138,21 +135,6 @@ footer{
 
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/8dbffe4a0a.js" crossorigin="anonymous"></script>
-    <script>
-    var indexValue = 0;
-    function slideShow(){
-    setTimeout(slideShow, 4000);
-    var x;
-    const img = document.querySelectorAll("img");
-    for(x = 0; x < img.length; x++){
-        img[x].style.display = "none";
-    }
-    indexValue ++;
-    if(indexValue > img.length) {indexValue = 1}
-    img[indexValue - 1].style.display = "block";
-}
-slideShow();
-    </script>
 </body>
 
     </html>
