@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 <link rel ="stylesheet" href="style.css">
+<link rel="stylesheet" href="transition.css">
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1, minimal-scale=1" name="viewport">
-<title>Michael Weppernig</title>
+<title>Michael Weppernig | Home</title>
 <style>
 
 body{
     background-color: black;
 }
 .bg{
-    background: url(images/index.jpg);
+    background: url(images/index.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -43,6 +44,7 @@ footer{
 </head>
 
 <body>
+
     <div class="bg"></div>
     <nav class="navbar">
         <div class="logo">
@@ -52,9 +54,10 @@ footer{
         <ul class="nav-links">
             <li><a href="uebermich.html">Über mich</a></li>
             <li><a href="kalender.html">Kalender</a></li>
+            <li><a href="resultate.html">Resultate</a></li>
             <li><a href="sponsor.html">Sponsoren</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="news.html">News</a></li>
             
         </ul>
         <div class="burger">
@@ -66,20 +69,19 @@ footer{
 
     <main>
         <div class="title">
-            <h1>Herzlich Wilkommen auf meiner Webseite</h1>
+            <h2>Herzlich Wilkommen</h2>
         </div>
+        <div class="news">
+            <h3>Letztes Turnier</h3>
+            <hr style="margin-bottom:30px ;">
+            <h4>Pro Golf Tour Qualifying School</h4>
+            <h4 style="margin-top: 10px;">T11 @148 (74, 70)</h4>
+            <div class="button">
+            <button type="button" class="newsButton" onclick="window.location.href = 'kontakt.html'">Zum Bericht</button>
+            </div>
+     
             
-            <div class="social">
-                <section id="instagram">
-                  <a href="https://www.instagram.com/michi_weppernig" target="blank"><i class="fab fa-instagram"></i></a>
-              </section>
-              <section id="facebook">
-                  <a href="https://www.facebook.com/michael.weppernig" target="blank"><i class="fab fa-facebook-square"></i></a>
-              </section>
-              </div>
-
-       
-
+        </div>
 
 
     </main>

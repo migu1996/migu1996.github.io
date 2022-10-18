@@ -1,6 +1,11 @@
 *{
     margin: 0;
+    padding: 0;
     font-family: monospace;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 nav{
@@ -12,16 +17,22 @@ nav{
     top: 0;
     height: fit-content;
     padding-bottom: 15px;
-    z-index: 10;
-
-
+    z-index: 20;
 }
 
+nav .submenu{
+    visibility: hidden;
+}
+nav li:hover .submenu{
+
+    transition: all 2s ease-in;
+    visibility: visible;
+    animation-delay: 2s;
+}
 
 
 .logo{
     margin-top: 40px;
-
 }
 
 .logo a{
@@ -30,9 +41,8 @@ nav{
     letter-spacing: 5px;
     font-size: 22px;
     text-decoration: none;
-
-
 }
+
 .logo a:hover{
     color: white;
 }
@@ -42,12 +52,10 @@ nav{
     justify-content: space-around;
     width: 60%;
     padding-top: 45px;
-
 }
 
 .nav-links li{
     list-style-type: none;
-
 }
 
 .nav-links a{
@@ -56,19 +64,17 @@ nav{
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
-    
-
 }
+
 nav a:hover{
     color: green;
-
+    transition: all 0.3s;
 }
 
 .burger{
     display: none;
     cursor: pointer;
 }
-
 
 .burger div{
     width: 25px;
@@ -77,44 +83,90 @@ nav a:hover{
     margin: 3px;
     transition: all 0.3s ease;
 }
+
  .contact{
     position: absolute;
-    left: 0;
     top: 100%;
     width: 100%;
     text-align: center;
-    z-index: 20;
-    
+    z-index: 10;
+    background-color: transparent;
+    display: flex;   
 }
+
 .content{
     position: absolute;
-    left: 0;
     top: 100%;
     width: 100%;
-    background-color: transparent;
-    -webkit-backdrop-filter: blur(100px);
     text-align: center;
-    z-index: 20;
-    
+    z-index: 10;  
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
 }
+
+#button{
+    position: absolute;
+    top: 85%;
+}
+
+.content h1{
+
+    padding: 20px;
+    color: white;
+}
+
 
 .title{
     position: absolute;
-    top: 60%;
-    right: 0;
-    padding: 30px;
-    background-color: grey;
-    opacity: 0.8;
-
-
-    text-align: center;
-}
-.title h1{
-    color: black;
-}
-.content h1{
-    padding: 20px;
+    padding: 15px;
+    top: 50vh;
+    left: 10%;
+    background: rgb(0, 0, 0, 0.5);
     color: white;
+    font-size: 2vmin;
+    border: solid 1px white;
+    border-radius: 10px;
+    box-shadow: black 20px 20px 20px;
+    
+}
+
+
+
+.results {
+    position: absolute;
+    width: 100vw;
+    height: fit-content;
+    top: 100%;
+    background-color: #868F98;
+    z-index: 10;
+    opacity: 1;
+    padding: 0 0 50px 20px;
+}
+
+.results h2{
+    
+    color: black;
+    position: relative;
+    text-align: center;
+    font-size: 20pt;
+}
+.results h3{
+    color: white;
+    position: relative;
+    font-size: 15pt;
+    margin-top: 50px;
+
+}
+
+.results ul{
+    list-style: none;
+    color: white;
+    margin-top: 30px;
+    padding: 0 25px 0 25px;
+}
+.results li{
+    margin-top: 15px;
 }
 
 #instagram{
@@ -140,13 +192,7 @@ nav a:hover{
     color: white;
 }
 
-footer{
-    float: left;
-    background-color: green;
-}
-
-
-.calendar table, .calendartwo table{
+.calendar table{
     border-spacing: 5px 1rem;
     margin: 50px auto 0 auto;
     color: white;
@@ -154,11 +200,12 @@ footer{
 
 }
 
-
-
 .calendar table th{
     text-align: center;
+    
+
 }
+
 .border{
     border-top: 2px solid black;
 }
@@ -166,14 +213,12 @@ footer{
     width: 60%;
     margin: auto;
 }
-.contact{
-    display: flex;
-    background-color: transparent;
 
-}
 .container{
-    margin-left: 80px;
-    margin-right: 80px;
+   margin-left: auto;
+   margin-right: auto;
+
+   
  
 }
 .col{
@@ -188,7 +233,7 @@ footer{
 }
 
 .row {
-    display: block
+    display: block;
   
 }
 .infos{
@@ -208,6 +253,8 @@ footer{
     margin-top: 25px;
     color: white;
 }
+
+
 
 .infoIcon:hover{
     color: #ff6f61;
@@ -233,20 +280,18 @@ input{
 }
 
 #myName{
-    width: 24%;
+    width: 25%;
     background-color: rgb(229, 223, 241);
-    margin-left: 8px;
 }
 #myEmail{
+    width: 24.2%;
     background-color: rgb(229, 223, 241);
-    width: 24%;
 
 }
 textarea{
-
-
     max-width: 50%;
     min-width: 50%;
+    margin-left: -6px;
     height: 200px;
     min-height: 200px;
     margin-bottom: 10px;
@@ -254,8 +299,8 @@ textarea{
 }
 
 #mySubmit{
-
-    width: 51.5%;
+    margin-left: -6px;
+    width: 50%;
     height: 30px;
     background-color: #1435ee;
     border: none;
@@ -264,7 +309,6 @@ textarea{
 }
 
 fieldset{
-
     color: white;
     border: none;
     margin: auto;
@@ -272,12 +316,12 @@ fieldset{
 
 .contactForm{
     background-color: transparent;
+    backdrop-filter: blur(300px);
     -webkit-backdrop-filter: blur(300px);
     padding-top: 100px;
     width: 100%;
     
 }
-
 
 .contactForm h1{
     text-align: center;
@@ -285,17 +329,17 @@ fieldset{
     padding-top: 50px;
 }
 
-
 .social{
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: fit-content;
     right: 0;
     padding: 15px;
     background-color: transparent;
-    text-align: right;
-    
-  }
+    text-align: center;
+
+}
+
 .about{
     position: absolute;
     top: 72%;
@@ -303,7 +347,6 @@ fieldset{
     background-color: white;
     width: 100%;
     overflow-wrap: break-word;
-
 }
 
 .flex{
@@ -311,32 +354,29 @@ fieldset{
     padding: 20px;
 
 }
+
 .equipment{
     background-color: #fd5949;
     padding: 20px;
 }
-.flex img{
 
+.flex img{
     animation: fading 5s infinite;
     position: relative;
     width: 40%;
     margin-left: auto;
     margin-right: 0;
-
     border-radius: 20px;
 }
+
 .equipment table{
     width: 30%;
     margin: auto
-
 }
-.scroll-down {
-    opacity: 1;
-    -webkit-transition: all .5s ease-in 3s;
-    transition: all .5s ease-in 3s;
-  }
+
+
   
-  .scroll-down {
+.scroll-down {
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -347,27 +387,60 @@ fieldset{
     border: 2px solid #FFF;
     background-size: 14px auto;
     border-radius: 50%;
-    z-index: 2;
     -webkit-animation: bounce 2s infinite 2s;
     animation: bounce 2s infinite 2s;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
-  }
+
+}
   
-  .scroll-down:before {
-      position: absolute;
-      top: calc(50% - 8px);
-      left: calc(50% - 7px);
-      transform: rotate(-45deg);
-      display: block;
-      width: 12px;
-      height: 12px;
-      content: "";
-      border: 2px solid white;
-      border-width: 0px 0 2px 2px;
-  }
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 7px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+.news{
+    position: absolute;
+    padding: 20px;
+    bottom: 35vh;
+    right: 15%;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: rgb(20 , 20, 20) 20px 20px 20px;
+    border: solid 1px black;
+
+}
+.news h3{
+    margin-bottom: 10px;
+}
+.news button{
+    margin-top: 30px;
+    background-color: white;
+    border-style: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 10pt;
+    border-radius: 10px;  
+}
+.button :hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+}
   
-  @keyframes bounce {
+@keyframes bounce {
     0%,
     100%,
     20%,
@@ -387,48 +460,92 @@ fieldset{
       -ms-transform: translateY(-5px);
       transform: translateY(-5px);
     }
-  }
-  .bg h1{
-      color: white;
-      position: absolute;
-      top: 55%;
-      right: 5%;
-      padding: 20px;
-      background-color: black;
-      opacity: 0.8;
+}
+
+.bg h1{
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    padding: 20px;
+    background-color:black;
+
+    
 
       
-  }
-  .lastTournament{
-      position: absolute;
-      left: 10%;
-      top: 50%;
-      color: white;
-      background-color: black;
-      opacity: 0.8;
-      box-shadow: black 10px 10px 10px;
-      padding: 10px;
-      text-align: center;
-      font-size: 15px;
+}
+.lastTournament {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    color: white;
+    background-color: black;
+    box-shadow: black 10px 10px 10px;
+    opacity: 0.8;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
 
-  }
-  .lastTournament table, .nextTournament table{
+
+}
+
+.lastTournament table, .nextTournament table{
     border-spacing: 5px 1rem;
 
-  }
+}
 
-  .nextTournament{
+.nextTournament{
     position: absolute;
     right: 10%;
     top: 50%;
     color: white;
     background-color: black;
     opacity: 0.8;
-    box-shadow: black 10px 10px 10px;
+    box-shadow: black 20px 20px 15px;
     padding: 10px;
     text-align: center;
     font-size: 15px;
 }
+
+.sponsoren{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.birdie-sponsoren{
+
+    text-align: center;
+    padding: 20px;
+}
+
+.birdie-sponsoren h1, .par-sponsoren h1{
+    font-size: 20pt;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.par-sponsoren-logos{
+   
+    display: flex;
+    gap: 150px;
+    padding: 20px;
+    justify-content: center;
+    
+
+}
+
+.par-sponsoren{
+    padding-top: 100px;
+}
+
+.sponsor-werden{
+    background-color: green;
+    padding: 200px;
+}
+
 
 @keyframes fading{
     0% {opacity: 0;}
@@ -443,75 +560,69 @@ fieldset{
     body{
         overflow-x: hidden;
     }
+
     .nav-links{
         width: 65%;
     }
+
     .flex{
         display: block;
-
     }
+
     .flex img{
         width: 80%;
         height: auto;
         margin: 30px auto 30px auto;  
     }
     
-
     .about h2{
         text-align: center;
     }
-    .equipment table{
 
+    .equipment table{
         margin-left: auto;
         margin-right: auto;
-       
     }
+
     .nextTournament{
         left: 50%;
         top: 60%;
         width: 50%;
-        height: 15vh;
+        height: fit-content;
         opacity: 1;
         box-shadow: black 0px 0px 0px;
         font-size: 8px;
     }
+
     .lastTournament{
         left: 0;
         top: 60%;
         width: 50%;
-        height: 15vh;
+        height: fit-content;
         opacity: 1;
         box-shadow: black 0px 0px 0px;
         font-size: 8px;
     }
+
     .nextTournament table, .lastTournament table {
         margin-left: auto;
         margin-right: auto;
     }
+
     .about table{
-
         margin: 30px auto 30px auto;
-        
     }
-
-    
-    
-
-    
     
 }
 
-
-@media screen and (max-width:768px){
+@media screen and (max-width:880px){
 
     body{
         overflow-y: visible;
         overflow-x: hidden;
         background-color: black;
-
     }
 
-    
     .nav-links{
         position: absolute;
         right: 0px;
@@ -526,22 +637,24 @@ fieldset{
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         color: white;
-
-
+        
     }
+
     .nav-links li {
         opacity: 0;
         margin-top: -80px;
     }
+
     .burger{
         display: block;
         margin-top: 13px;
         margin-right: 10px;
     }
+
     .nav-active{
         transform: translateX(0%);
-
     }
+
     .logo{
        margin-left: 10px;
        margin-top: 12px;
@@ -550,28 +663,26 @@ fieldset{
     h1{
         font-size: 30px;
     }
-    .title h1{
-        font-size: 20px;
 
-    }
-    .title{
-        width: 100%;
-        padding: 20px 0 20px 0;
-    }
+
+
     .hr{
         width: 60%;
     }
+
     .row{
         display: block;
         margin-left: -50px;
     }
+
     .contact{
         display: block;
     }
+
     .flex{
         display: block;
-
     }
+
     .flex img{
         width: 80%;
         height: auto;
@@ -581,16 +692,20 @@ fieldset{
     .about table{
         margin: 30px auto 30px auto;
     }
+
     .about h2{
         text-align: center;
     }
+
     .equipment table{
         width: 70%;
-       
-    }.equipment dl{
+    }
+
+    .equipment dl{
         width: 40%;
         margin: 100px auto 0 auto;
     }
+
     #instagram, #facebook{
         padding: 5px 8px 5px 8px;
         font-size: 25px;
@@ -600,25 +715,24 @@ fieldset{
         left: 50%;
         top: 60%;
         width: 50%;
-        height: fit-content;
-        opacity: 1;
+        height: 120px;
+        opacity: 0.8;
         box-shadow: black 0px 0px 0px;
         font-size: 8px;
-
     }
+
     .lastTournament{
         left: 0;
         top: 60%;
         width: 50%;
-        height: fit-content;
-        opacity: 1;
+        height: 120px;
+        opacity: 0.8;
         box-shadow: black 0px 0px 0px;
         font-size: 8px;
-
     }
+
     .lastTournament table, .nextTournament table{
         width: 100%;
-        
     }
 
     .bg h1{
@@ -628,17 +742,80 @@ fieldset{
         text-align: center;
         width: 100%;
     }
+
     .scroll-down{
         bottom: 10px;
     }
+
     .contactForm{
         padding-top: 20px;
         padding-bottom: 30px;
     }
+
     .calendar table{
         padding: 0px 10px 0px 10px;
     }
 
+    .results h2{
+        font-size: 15pt;
+    }
+    .results h3{
+        font-size: 12pt;
+        text-align: center;
+       
+    }
+    .news{
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        max-width: 60%;
+        padding: 10px;
+        bottom: 5%;
+
+    }
+    .news h3{
+        font-size: 10pt;
+    }
+    .news h4{
+        font-size: 8pt;
+    }
+    .news button{
+        font-size: 8pt;
+    }
+    .title{
+        top: 22vh;
+        max-width: fit-content;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container{
+        margin-left: 50px;
+    }
+
+    .birdie-sponsoren img{
+        width: 70%;
+    }
+
+    .par-sponsoren{
+        padding-top: 50px;
+    }
+    .par-sponsoren-logos{
+        display: grid;
+        text-align: center;
+        width: 100%;
+        grid-row-gap: 50px;
+    }
+    .par-sponsoren-logos img{
+        width: 50%;
+        margin-left: 25%;
+    }
+    #bni-logo{
+        width: 30%;
+        margin-left: 35%;
+    }
 
 }
 
@@ -652,15 +829,15 @@ fieldset{
         transform: translateX(0px);
     }
 }
+
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px, 6px);
+}
 
-}
 .toggle .line2{
-    opacity: 0;
-    
+    opacity: 0; 
 }
+
 .toggle .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
-    
+    transform: rotate(45deg) translate(-5px, -6px);  
 }
