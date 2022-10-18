@@ -137,8 +137,8 @@ nav a:hover{
     position: absolute;
     width: 100vw;
     height: fit-content;
-    top: 100%;
-    background-color: #868F98;
+    top: 90%;
+    background-color: black;
     z-index: 10;
     opacity: 1;
     padding: 0 0 50px 20px;
@@ -146,7 +146,7 @@ nav a:hover{
 
 .results h2{
     
-    color: black;
+    color: white;
     position: relative;
     text-align: center;
     font-size: 20pt;
@@ -354,6 +354,13 @@ fieldset{
     padding: 20px;
 
 }
+.flex p{
+
+    line-height: 30px;
+    font-size: 14pt;
+    font-family: 'Times New Roman', Times, serif;
+
+}
 
 .equipment{
     background-color: #fd5949;
@@ -514,6 +521,7 @@ fieldset{
     background-color: white;
     opacity: 0.8;
     left: 0;
+    
 }
 
 .birdie-sponsoren{
@@ -542,10 +550,30 @@ fieldset{
     padding-top: 100px;
 }
 
-.sponsor-werden{
-    background-color: green;
-    padding: 200px;
+#sponsoren-picture{
+    margin-top: 50px;
+    background-color: black;
+    padding: 2px;
+     
 }
+#sponsor-werden{
+    padding: 50px;
+    text-align: center;
+}
+#sponsor-werden a{
+
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+#sponsor-werden h2{
+    margin-bottom: 20px;
+}
+
+
+
 
 
 @keyframes fading{
@@ -817,6 +845,7 @@ fieldset{
         width: 30%;
         margin-left: 35%;
     }
+
 
 }
 
