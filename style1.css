@@ -611,7 +611,7 @@ fieldset{
     width: 100%;
     color: white;
     opacity: 0.8;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 .blog h1{
     text-align: center;
@@ -632,6 +632,7 @@ fieldset{
     background-color: white;
     padding: 10px;
     color: black;
+
 
 }
 .blog-list h1{
@@ -937,6 +938,7 @@ fieldset{
     }
     .blog{
         display: block;
+        padding-bottom: 10px;
         
     }
 
