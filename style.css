@@ -590,7 +590,7 @@ fieldset{
     background-repeat: no-repeat;
     position: fixed;
     height: 100vh;
-    background-position-y: -100px;
+    background-position:top;
     background-color: black;
 }
 
