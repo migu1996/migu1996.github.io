@@ -30,8 +30,8 @@ nav{
 .logo a{
     color: white;
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 22px;
+    letter-spacing: 1px;
+    font-size: 3vh;
     text-decoration: none;
 }
 
@@ -53,9 +53,9 @@ nav{
 .nav-links a{
     color: white;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 2vh;
 }
 
 nav a:hover{
@@ -106,17 +106,21 @@ nav a:hover{
 
     padding: 20px;
     color: white;
+    font-size: 3vh;
 }
 
 
+.calendar table td{
+    font-size: 2vh;
+}
 .title{
     position: fixed;
     padding: 15px;
-    top: 50vh;
+    top: 45%;
     left: 10%;
     background: rgb(0, 0, 0, 0.5);
     color: white;
-    font-size: 2vmin;
+    font-size: 1.5vh;
     border: solid 1px white;
     border-radius: 10px;
     box-shadow: black 20px 20px 20px;
@@ -129,7 +133,7 @@ nav a:hover{
     position: absolute;
     width: 100vw;
     height: fit-content;
-    top: 90%;
+    top: 90vh;
     background-color: black;
     opacity: 0.9;
     z-index: 30;
@@ -141,12 +145,12 @@ nav a:hover{
     color: white;
     position: relative;
     text-align: center;
-    font-size: 20pt;
+    font-size: 4vh;
 }
 .results h3{
     color: white;
     position: relative;
-    font-size: 15pt;
+    font-size: 3vh;
     margin-top: 50px;
 
 }
@@ -156,6 +160,7 @@ nav a:hover{
     color: white;
     margin-top: 30px;
     padding: 0 25px 0 25px;
+    font-size: 2vh;
 }
 .results li{
     margin-top: 15px;
@@ -166,7 +171,7 @@ nav a:hover{
     padding: 5px 10px 0 10px;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     border-radius: 10px;
-    font-size: 40px;
+    font-size: 5vh;
     color: white;
 }
 #instagram:hover, #facebook:hover{
@@ -178,7 +183,7 @@ nav a:hover{
     padding: 5px 10px 0 10px;
     background-color: #4267B2;
     border-radius: 10px;
-    font-size: 40px;
+    font-size: 5vh;
 }
 #facebook a, #instagram a{
     color: white;
@@ -349,7 +354,7 @@ fieldset{
 .flex p{
 
     line-height: 30px;
-    font-size: 14pt;
+    font-size: 2.5vh;
 
 
 }
@@ -409,8 +414,8 @@ fieldset{
 .news{
     position: fixed;
     padding: 20px;
-    bottom: 35vh;
-    right: 15%;
+    bottom: 40%;
+    right: 10%;
     background-color: transparent;
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
@@ -419,6 +424,7 @@ fieldset{
     border-radius: 20px;
     box-shadow: rgb(20 , 20, 20) 20px 20px 20px;
     border: solid 1px black;
+    font-size: 2vh;
 
 }
 .news h3{
@@ -431,7 +437,7 @@ fieldset{
     width: 100%;
     cursor: pointer;
     font-weight: bold;
-    font-size: 10pt;
+    font-size: 1.5vh;
     border-radius: 10px;  
 }
 .button :hover{
@@ -440,31 +446,33 @@ fieldset{
 }
 
 .index-sponsoring{
+    padding-top: 20px;
     position: fixed;
     background-color: black;
     width: 100%;
-    height: 18%;
+    height: fit-content;
     bottom: 0;
     text-align: center;
-    padding: 10px;
+    opacity: 0.9;
+
 
     
 }
-.index-sponsoring h2{
-    color: white;
-    padding: 20px;
-    font-size: 16pt;
-}
-.index-sponsoring a{
-    text-decoration: none;
-    padding: 10px;
+.index-sponsoring button{
     background-color: white;
     color: black;
-    border-radius: 10px;
-    font-size: 11pt;
-    font-weight: bold;
-}
+    font-size: 2vh;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
 
+}
+.index-sponsoring h2{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 2.5vh;
+}
 
 
 @keyframes bounce {
@@ -511,7 +519,7 @@ fieldset{
     opacity: 0.8;
     padding: 10px;
     text-align: center;
-    font-size: 15px;
+
 
 
 }
@@ -531,7 +539,7 @@ fieldset{
     box-shadow: black 20px 20px 15px;
     padding: 10px;
     text-align: center;
-    font-size: 15px;
+
 }
 
 .sponsoren{
@@ -541,6 +549,7 @@ fieldset{
     background-color: white;
     opacity: 0.9;
     left: 0;
+    z-index: 30;
     
 }
 
@@ -555,7 +564,7 @@ fieldset{
 }
 
 .sponsoren h1{
-    font-size: 20pt;
+    font-size: 3.5vh;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -566,6 +575,7 @@ fieldset{
     gap: 150px;
     padding: 20px;
     justify-content: center;
+    font-size: 1.5vh;
     
 
 }
@@ -594,6 +604,7 @@ fieldset{
 }
 #sponsor-werden h2{
     margin-bottom: 20px;
+    font-size: 2.5vh;
 }
 
 .sponsoren hr{
@@ -621,10 +632,12 @@ fieldset{
 .block button{
     background-color: black;
     color: white;
-    font-size: 12pt;
-    padding: 10px;
+    font-size: 2.1vh;
+    padding: 5px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
 
 }
 
@@ -633,7 +646,7 @@ fieldset{
 .blog{
     display: flex;
     position: absolute;
-    top: 400px;
+    top: 70vh;
     background-color: black;
     padding: 10px;
     width: 100%;
@@ -642,12 +655,7 @@ fieldset{
     padding-bottom: 100px;
     z-index: 30;
 }
-.blog h1{
-    text-align: center;
-    padding-bottom: 60px;
-    font-size: 30pt;
 
-}
 
 .blog h2{
     text-align: center;
@@ -666,11 +674,7 @@ fieldset{
 }
 .blog-list h1{
     text-align: center;
-    font-size: 20pt;
-}
-.blog-list h3{
-    padding-top: 20px;
-    font-size: 15pt;
+    font-size: 4vh;
 }
 
 
@@ -685,11 +689,11 @@ fieldset{
 }
 .news-entries p{
 
-    font-size: 13pt;
+    font-size: 2.5vh;
     
 }
 .news-entries h2{
-    font-size: 18pt;
+    font-size: 3.5vh;
     font-weight: bold;
 }
 
@@ -700,11 +704,6 @@ fieldset{
 .news-text.appear{
     opacity: 1;
 }
-
-
-
-
-
 
 
 @keyframes fading{
@@ -752,7 +751,7 @@ fieldset{
         height: fit-content;
         opacity: 1;
         box-shadow: black 0px 0px 0px;
-        font-size: 8px;
+        font-size: 2vh;
     }
 
     .lastTournament{
@@ -762,7 +761,7 @@ fieldset{
         height: fit-content;
         opacity: 1;
         box-shadow: black 0px 0px 0px;
-        font-size: 8px;
+        font-size: 2vh;
     }
 
     .nextTournament table, .lastTournament table {
@@ -776,7 +775,7 @@ fieldset{
     
 }
 
-@media screen and (max-width:880px){
+@media screen and (max-width:950px){
 
     body{
         overflow-y: visible;
@@ -803,9 +802,7 @@ fieldset{
         color: white;
         
     }
-    .content{
-        z-index: 10;
-    }
+
 
     .nav-links li {
         opacity: 0;
@@ -828,11 +825,6 @@ fieldset{
        margin-top: 12px;
     }
    
-    h1{
-        font-size: 30px;
-    }
-
-
 
     .hr{
         width: 60%;
@@ -876,27 +868,24 @@ fieldset{
 
     #instagram, #facebook{
         padding: 5px 8px 5px 8px;
-        font-size: 25px;
     }
 
     .nextTournament{
         left: 50%;
-        top: 60%;
+        top: 50%;
         width: 50%;
-        height: 120px;
+        height: fit-content;
         opacity: 0.8;
         box-shadow: black 0px 0px 0px;
-        font-size: 8px;
     }
 
     .lastTournament{
         left: 0;
-        top: 60%;
+        top: 50%;
         width: 50%;
-        height: 120px;
+        height: fit-content;
         opacity: 0.8;
         box-shadow: black 0px 0px 0px;
-        font-size: 8px;
     }
 
     .lastTournament table, .nextTournament table{
@@ -906,7 +895,6 @@ fieldset{
     .bg h1{
         left: 0;
         top: 70%;
-        font-size: 20px;
         text-align: center;
         width: 100%;
     }
@@ -923,15 +911,11 @@ fieldset{
     .calendar table{
         padding: 0px 10px 0px 10px;
     }
-    .results, .contact, .content, .blog {
+    .results, .contact, .content, .blog, .sponsoren {
         z-index: 10;
     }
 
-    .results h2{
-        font-size: 15pt;
-    }
     .results h3{
-        font-size: 12pt;
         text-align: center;
        
     }
@@ -942,35 +926,16 @@ fieldset{
         right: 0;
         max-width: 60%;
         padding: 10px;
-        bottom: 23%;
+        bottom: 35%;
         
 
     }
-    .news h3{
-        font-size: 10pt;
-    }
-    .news h4{
-        font-size: 8pt;
-    }
-    .news button{
-        font-size: 8pt;
-    }
+
     .title{
-        top: 15%;
-        max-width: fit-content;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
+        opacity: 0;
     }
 
-    .index-sponsoring a{
-        font-size: 9pt;
 
-    }
-    .index-sponsoring h2{
-        font-size: 12pt;
-    }
     .container{
         margin-left: 50px;
     }
@@ -1001,13 +966,8 @@ fieldset{
         padding-bottom: 10px;
         
     }
-    .news-entries p{
 
-        font-size: 10pt;
-        
-    }
     .news-entries h2{
-        font-size: 13pt;
         font-weight: bold;
     }
  
