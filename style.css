@@ -1,8 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: monospace;
+    font-family: sans-serif;
     box-sizing: border-box;
+
 }
 html{
     scroll-behavior: smooth;
@@ -10,7 +11,7 @@ html{
 }
 
 nav{
-    background-color: black;
+    background-color: transparent;
     display: flex;
     justify-content: space-around;
     position: fixed;
@@ -19,16 +20,6 @@ nav{
     height: fit-content;
     padding-bottom: 15px;
     z-index: 20;
-}
-
-nav .submenu{
-    visibility: hidden;
-}
-nav li:hover .submenu{
-
-    transition: all 2s ease-in;
-    visibility: visible;
-    animation-delay: 2s;
 }
 
 
@@ -100,7 +91,7 @@ nav a:hover{
     top: 100%;
     width: 100%;
     text-align: center;
-    z-index: 10;  
+    z-index: 30;  
     background-color: transparent;
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
@@ -140,8 +131,8 @@ nav a:hover{
     height: fit-content;
     top: 90%;
     background-color: black;
-    z-index: 10;
-    opacity: 1;
+    opacity: 0.9;
+    z-index: 30;
     padding: 0 0 50px 20px;
 }
 
@@ -359,7 +350,7 @@ fieldset{
 
     line-height: 30px;
     font-size: 14pt;
-    font-family: 'Times New Roman', Times, serif;
+
 
 }
 
@@ -475,7 +466,7 @@ fieldset{
 }
 
 
-  
+
 @keyframes bounce {
     0%,
     100%,
@@ -596,7 +587,7 @@ fieldset{
 #sponsor-werden a{
 
     text-decoration: none;
-    padding: 10px;
+    padding-top: 10px;
     background-color: black;
     color: white;
     border-radius: 10px;
@@ -622,6 +613,21 @@ fieldset{
     position: fixed;
     background-color: black;
 }
+.block{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.block button{
+    background-color: black;
+    color: white;
+    font-size: 12pt;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+
+}
+
 
 
 .blog{
@@ -632,8 +638,9 @@ fieldset{
     padding: 10px;
     width: 100%;
     color: white;
-    opacity: 0.8;
+    opacity: 0.85;
     padding-bottom: 100px;
+    z-index: 30;
 }
 .blog h1{
     text-align: center;
@@ -674,6 +681,7 @@ fieldset{
 
 .news-entries{
     padding: 20px;
+
 }
 .news-entries p{
 
@@ -713,6 +721,7 @@ fieldset{
         overflow-x: hidden;
     }
 
+  
     .nav-links{
         width: 65%;
     }
@@ -774,6 +783,9 @@ fieldset{
         overflow-x: hidden;
         background-color: black;
     }
+    nav{
+        background-color: black;
+    }
 
     .nav-links{
         position: absolute;
@@ -791,6 +803,9 @@ fieldset{
         color: white;
         
     }
+    .content{
+        z-index: 10;
+    }
 
     .nav-links li {
         opacity: 0;
@@ -806,6 +821,7 @@ fieldset{
     .nav-active{
         transform: translateX(0%);
     }
+
 
     .logo{
        margin-left: 10px;
@@ -907,6 +923,9 @@ fieldset{
     .calendar table{
         padding: 0px 10px 0px 10px;
     }
+    .results, .contact, .content, .blog {
+        z-index: 10;
+    }
 
     .results h2{
         font-size: 15pt;
@@ -924,6 +943,7 @@ fieldset{
         max-width: 60%;
         padding: 10px;
         bottom: 23%;
+        
 
     }
     .news h3{
@@ -990,6 +1010,8 @@ fieldset{
         font-size: 13pt;
         font-weight: bold;
     }
+ 
+ 
 
 }
 

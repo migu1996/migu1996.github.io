@@ -15,7 +15,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-position-y: 40px;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -86,9 +85,11 @@ footer{
         <hr>
         <div id="sponsor-werden">
             <h2>Wollen auch Sie mich unterstützen?</h2>
-            <a href="Investment Portfolio.pdf" target="_blank">Portfolio</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="birdieclub.html">Birdie-Club</a>
+            <div class="block">
+                <button type="button" class="newsButton" onclick="window.location.href = 'Investment Portfolio.pdf'">Investment Portfolio</button>
+                <button type="button" class="newsButton" onclick="window.location.href = 'birdieclub.html'">Birdie Club</button>
+                <button type="button" class="newsButton" onclick="window.location.href = 'kontakt.html'">Kontakt</button>
+        </div>
         </div>
     </div>
         
