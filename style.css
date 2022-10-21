@@ -447,11 +447,13 @@ fieldset{
 
 .index-sponsoring{
     padding-top: 20px;
+    padding-bottom: 10px;
     position: fixed;
     background-color: black;
     width: 100%;
     height: fit-content;
     bottom: 0;
+
     text-align: center;
     opacity: 0.9;
 
