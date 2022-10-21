@@ -735,11 +735,6 @@ fieldset{
         color: white;
         
     }
-
-    }
-
-
-
     .nav-links li {
         opacity: 0;
         margin-top: -80px;
@@ -807,6 +802,12 @@ fieldset{
     .about table{
         margin: 30px auto 30px auto;
     }
+
+    }
+
+
+
+    
     
 
 
