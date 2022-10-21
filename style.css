@@ -57,7 +57,7 @@ nav{
     text-decoration: none;
     letter-spacing: 1px;
     font-weight: bold;
-    font-size: 2vh;
+    font-size: 2.5vh;
 }
 
 nav a:hover{
@@ -727,9 +727,7 @@ fieldset{
     .nav-links{
         width: 65%;
     }
-    .nav-links a{
-        font-size: 1.5vh;
-    }
+
     .logo a{
         font-size: 2vh;
     }
@@ -952,6 +950,15 @@ fieldset{
     .par-sponsoren, .birdie-sponsoren{
         padding-top: 50px;
     }
+
+ 
+
+    #bni-logo{
+        width: 35%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
     .par-sponsoren-logos{
         display: grid;
         text-align: center;
@@ -962,10 +969,7 @@ fieldset{
         width: 50%;
         margin-left: 25%;
     }
-    #bni-logo{
-        width: 30%;
-        margin-left: 35%;
-    }
+    
     .blog{
         display: block;
         padding-bottom: 10px;
@@ -986,7 +990,7 @@ fieldset{
         margin-right: auto;
         max-width: fit-content;
         padding: 10px;
-        bottom: 25%;
+        bottom: 20%;
         left: -55%;
     }
 
@@ -999,6 +1003,20 @@ fieldset{
         background-color: transparent;
         
         
+    }
+    .birdie-sponsoren img, .eagle-sponsoren img{
+        width: 40%;
+    }
+    .par-sponsoren-logos img{
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #ds-logo{
+        width: 30%;
+    }
+    .nav-links a{
+        font-size: 3vh;
     }
 
 
