@@ -735,9 +735,7 @@ fieldset{
         color: white;
         
     }
-    .logo a{
-        font-size: 3vh;
-        
+
     }
 
 
@@ -810,7 +808,7 @@ fieldset{
         margin: 30px auto 30px auto;
     }
     
-}
+
 
 @media screen and (max-width:801px){
 
@@ -839,11 +837,6 @@ fieldset{
         color: white;
         
     }
-    .logo a{
-        font-size: 3vh;
-        
-    }
-
 
 
     .nav-links li {
@@ -1045,7 +1038,10 @@ fieldset{
         font-size: 2.5vh;
     }
     .lastTournament, .nextTournament{
-        top: 50%;
+        top: 45%;
+    }
+    .logo a{
+        font-size: 4vh;
     }
 
 
