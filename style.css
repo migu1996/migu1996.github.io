@@ -748,7 +748,7 @@ fieldset{
 
     .nextTournament{
         left: 50%;
-        top: 60%;
+        top: 55%;
         width: 50%;
         height: fit-content;
         opacity: 1;
@@ -758,7 +758,7 @@ fieldset{
 
     .lastTournament{
         left: 0;
-        top: 60%;
+        top: 55%;
         width: 50%;
         height: fit-content;
         opacity: 1;
@@ -872,22 +872,14 @@ fieldset{
         padding: 5px 8px 5px 8px;
     }
 
-    .nextTournament{
-        left: 50%;
-        top: 50%;
-        width: 50%;
-        height: fit-content;
-        opacity: 0.8;
-        box-shadow: black 0px 0px 0px;
+    #last-next-tournament{
+    
+        display: flex;
+        opacity: 0.9;
     }
-
-    .lastTournament{
-        left: 0;
-        top: 50%;
-        width: 50%;
-        height: fit-content;
-        opacity: 0.8;
-        box-shadow: black 0px 0px 0px;
+    .nextTournament, .lastTournament{
+        padding: 0;
+        
     }
 
     .lastTournament table, .nextTournament table{
