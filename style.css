@@ -716,14 +716,14 @@ fieldset{
         background-color: black;
     }
     nav{
-        background-color: black;
+        background-color: transparent;
     }
 
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 95vh;
-        top: 7vh;
+        height: 100vh;
+        top: 0;
         background-color: black;
         display: flex;
         flex-direction: column;
@@ -753,6 +753,7 @@ fieldset{
     .logo{
        margin-left: 10px;
        margin-top: 12px;
+       z-index: 30;
     }
 
     .flex{
@@ -819,14 +820,14 @@ fieldset{
         background-color: black;
     }
     nav{
-        background-color: black;
+        background-color: transparent;
     }
 
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 95vh;
-        top: 7vh;
+        height: 100vh;
+        top: 0;
         background-color: black;
         display: flex;
         flex-direction: column;
@@ -858,6 +859,7 @@ fieldset{
     .logo{
        margin-left: 10px;
        margin-top: 12px;
+       z-index: 30;
     }
 
     .hr{
