@@ -38,9 +38,6 @@
     top: 0;
     width: 100%;
   }
-  .bg{
-    background-position-y: 20px ;
-  }
   
 }
 </style>
@@ -252,7 +249,7 @@
             var positionTop = $(document).scrollTop();
             var realPosition = positionTop / window.innerHeight;
             console.log(realPosition);
-            if(realPosition >= 0.9){
+            if(realPosition >= 0.8){
                 $('.navigation').addClass('background');
             }
             else{
