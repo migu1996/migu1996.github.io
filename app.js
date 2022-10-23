@@ -3,8 +3,14 @@ const navSlide = () => {
     const nav = document.querySelector('.nav-links');
     const NavLinks = document.querySelectorAll('.nav-links li');
 
+
+
     burger.addEventListener('click',()=>{  
         nav.classList.toggle('nav-active');
+
+        
+
+        
 
     NavLinks.forEach((link, index) => {
         if(link.style.animation){
@@ -19,6 +25,8 @@ const navSlide = () => {
     burger.classList.toggle('toggle');
     });
 }
+
+
 navSlide();
 
 const faders = document.querySelectorAll('.news-text');
@@ -41,6 +49,10 @@ const appearOnScroll = new IntersectionObserver
 faders.forEach(fader =>{
     appearOnScroll.observe(fader)
 });
+
+
+
+
 
 
 

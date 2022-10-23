@@ -21,14 +21,18 @@ nav{
     top: 0;
     height: fit-content;
     padding-bottom: 15px;
-    z-index: 20;
     padding-left: 20px;
     padding-right: 20px;
+    z-index: 10;
+}
+.background{
+    background-color: black;
 }
 
 
 .logo{
     margin-top: 40px;
+    z-index: 20;
 }
 
 .logo a{
@@ -85,9 +89,9 @@ nav a:hover{
     top: 100%;
     width: 100%;
     text-align: center;
-    z-index: 10;
     background-color: transparent;
     display: flex;   
+    z-index: 5;
 }
 
 .content{
@@ -95,14 +99,14 @@ nav a:hover{
     top: 100%;
     width: 100%;
     text-align: center;
-    z-index: 30;  
     background-color: transparent;
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
+    z-index: 0;
 }
 
 #button{
-    position: absolute;
+    position: fixed;
     top: 85%;
 }
 
@@ -140,7 +144,6 @@ nav a:hover{
     top: 65vh;
     background-color: black;
     opacity: 0.9;
-    z-index: 30;
     padding: 0 0 50px 20px;
 }
 
@@ -338,6 +341,7 @@ fieldset{
     padding: 15px;
     background-color: transparent;
     text-align: center;
+    z-index: 2;
 
 }
 
@@ -504,7 +508,7 @@ fieldset{
 
 
 .lastTournament {
-    position: absolute;
+    position: fixed;
     left: 10%;
     top: 50%;
     color: white;
@@ -524,7 +528,7 @@ fieldset{
 }
 
 .nextTournament{
-    position: absolute;
+    position: fixed;
     right: 10%;
     top: 50%;
     color: white;
@@ -543,7 +547,6 @@ fieldset{
     background-color: white;
     opacity: 0.9;
     left: 0;
-    z-index: 30;
     
 }
 
@@ -647,7 +650,7 @@ fieldset{
     color: white;
     opacity: 0.85;
     padding-bottom: 100px;
-    z-index: 30;
+
 }
 
 
@@ -753,7 +756,6 @@ fieldset{
     .logo{
        margin-left: 10px;
        margin-top: 12px;
-       z-index: 30;
     }
 
     .flex{
@@ -821,6 +823,7 @@ fieldset{
     }
     nav{
         background-color: transparent;
+
     }
 
     .nav-links{
@@ -839,6 +842,8 @@ fieldset{
         color: white;
         
     }
+  
+ 
 
 
     .nav-links li {
@@ -859,12 +864,12 @@ fieldset{
     .logo{
        margin-left: 10px;
        margin-top: 12px;
-       z-index: 30;
     }
 
     .hr{
         width: 60%;
     }
+
 
     .row{
         display: block;
@@ -884,6 +889,7 @@ fieldset{
         height: auto;
         margin: 30px auto 30px auto;  
     }
+
     
     .about table{
         margin: 30px auto 30px auto;
@@ -932,9 +938,7 @@ fieldset{
     .calendar table{
         padding: 0px 10px 0px 10px;
     }
-    .results, .contact, .content, .blog, .sponsoren {
-        z-index: 10;
-    }
+  
 
     .results h3{
         text-align: center;

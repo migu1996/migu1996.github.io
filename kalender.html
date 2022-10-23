@@ -48,7 +48,7 @@
 <body>
 
     
-    <nav>
+    <nav class="navigation">
         <div class="logo">
             <h4><a href="index.html">Michael Weppernig</a></h4>
 
@@ -245,11 +245,30 @@
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/8dbffe4a0a.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>$(function () {
-            $('.scroll-down').click(function () {
-                $('html, body').animate({ scrollTop: $('#button').offset().top }, 1000, 'linear');
-                return false;
-            });
-        });</script>
+
+    
+    <script>
+        $(window).scroll(function(){
+            var positionTop = $(document).scrollTop();
+            var realPosition = positionTop / window.innerHeight;
+            console.log(realPosition);
+            if(realPosition >= 0.9){
+                $('.navigation').addClass('background');
+            }
+            else{
+                $('.navigation').removeClass('background');
+            }
+
+        });
+
+    </script>
+     <script>$(function () {
+        $('.scroll-down').click(function () {
+            $('html, body').animate({ scrollTop: $('#button').offset().top }, 1000, 'linear');
+            return false;
+        });
+    });
+    
+</script>
 </body>
     </html>
